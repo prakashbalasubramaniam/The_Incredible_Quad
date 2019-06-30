@@ -20,4 +20,7 @@ Questions
 1) Does state with higher population have higher salary making it the best state? 
 2) Lower unemployment has lower crime rate therefore making it best state to live in?
 3) People lives in best state because home is cheaper
+4) What is criteria to be the best state to live in?
+5) Southern states are the preferred ones?
+
 
