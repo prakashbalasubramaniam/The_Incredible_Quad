@@ -3,7 +3,7 @@ Repo for Project
 
 Members - Bahar, Catherine, Molly, Prakash
 
-Project Description - BOur opinion on Best State to live in 2018 for “employee” from 5 criteria below, 
+Project Description - Our opinion on Best State to live in 2018 for “employee” from 5 criteria below, 
 
 State Tax
 Climate
