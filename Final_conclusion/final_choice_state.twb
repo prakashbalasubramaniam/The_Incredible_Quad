@@ -1,0 +1,968 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='9.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 9000.15.0720.1008                                -->
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='final_choice_state' inline='true' name='textscan.43658.494296967590' version='9.0'>
+      <connection class='textscan' directory='I:/The_Incredible_Quad/Final_conclusion' filename='final_choice_state.csv' password='' server=''>
+        <relation name='final_choice_state#csv' table='[final_choice_state#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='Average Crime Rate' ordinal='1' />
+            <column datatype='integer' name='Labor Force' ordinal='2' />
+            <column datatype='integer' name='Unemployed' ordinal='3' />
+            <column datatype='real' name='Total State Tax' ordinal='4' />
+            <column datatype='real' name='Annual Home Price' ordinal='5' />
+            <column datatype='real' name='Annual Wages per Employee' ordinal='6' />
+            <column datatype='real' name='Crime Rate / Labor Force' ordinal='7' />
+            <column datatype='real' name='Unemployed / Labor Force' ordinal='8' />
+            <column datatype='real' name='Crime Rate WSA' ordinal='9' />
+            <column datatype='real' name='Labor Force WSA' ordinal='10' />
+            <column datatype='real' name='Unemployed WSA' ordinal='11' />
+            <column datatype='real' name='Total State Tax WSA' ordinal='12' />
+            <column datatype='real' name='Home Price WSA' ordinal='13' />
+            <column datatype='real' name='Wages WSA' ordinal='14' />
+            <column datatype='real' name='Total WSA' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Crime Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Crime Rate]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Average Crime Rate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Labor Force</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Labor Force]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Labor Force</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unemployed]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Unemployed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total State Tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total State Tax]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Total State Tax</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Home Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Home Price]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Annual Home Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Wages per Employee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Wages per Employee]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Annual Wages per Employee</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime Rate / Labor Force</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crime Rate / Labor Force]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Crime Rate / Labor Force</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployed / Labor Force</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployed / Labor Force]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Unemployed / Labor Force</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime Rate WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crime Rate WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Crime Rate WSA</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Labor Force WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Labor Force WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Labor Force WSA</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployed WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployed WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Unemployed WSA</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total State Tax WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total State Tax WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Total State Tax WSA</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home Price WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Home Price WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Home Price WSA</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wages WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wages WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Wages WSA</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total WSA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total WSA]</local-name>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias>Total WSA</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[final_choice_state#csv]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column aggregation='Sum' datatype='real' name='[Total WSA]' role='dimension' type='ordinal'>
+      </column>
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;MA&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;RI&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;AK&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;ME&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;SD&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;CA&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;MS&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;VA&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;IN&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;OH&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;HI&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;NJ&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;FL&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;NE&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;WV&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;CO&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;MT&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;VT&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;MD&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;SC&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;AL&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;MI&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;TN&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;KY&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;OR&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;IA&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;NM&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;GA&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;NH&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;WY&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;KS&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;OK&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;CT&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;NC&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;WA&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;LA&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;PA&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;ID&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;NV&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;IL&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;NY&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;AR&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;MN&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;TX&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;DE&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;ND&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;WI&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;AZ&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;MO&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;UT&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options export-orientation='landscape' export-scale-mode-auto='false'>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_choice_state' name='textscan.43658.494296967590' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.43658.494296967590'>
+            <column datatype='real' name='[Annual Home Price]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[Annual Wages per Employee]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='real' name='[Crime Rate / Labor Force]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='integer' name='[Labor Force]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column datatype='real' name='[Total State Tax]' role='measure' type='quantitative'>
+            </column>
+            <column aggregation='Sum' datatype='real' name='[Total WSA]' role='dimension' type='ordinal'>
+            </column>
+            <column datatype='real' name='[Unemployed / Labor Force]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[Crime Rate / Labor Force]' derivation='Max' name='[max:Crime Rate / Labor Force:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total State Tax]' derivation='Max' name='[max:Total State Tax:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Unemployed / Labor Force]' derivation='Max' name='[max:Unemployed / Labor Force:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual Home Price]' derivation='Min' name='[min:Annual Home Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual Wages per Employee]' derivation='Min' name='[min:Annual Wages per Employee:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Labor Force]' derivation='Min' name='[min:Labor Force:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total State Tax]' derivation='None' name='[none:Total State Tax:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total WSA]' derivation='None' name='[none:Total WSA:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[textscan.43658.494296967590].[min:Annual Home Price:qk]' value='84' />
+            <format attr='width' field='[textscan.43658.494296967590].[min:Annual Wages per Employee:qk]' value='84' />
+            <format attr='width' field='[textscan.43658.494296967590].[max:Total State Tax:qk]' value='84' />
+            <format attr='width' field='[textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk]' value='84' />
+            <format attr='width' field='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' value='84' />
+            <encoding attr='space' class='0' field='[textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk]' scope='rows' value='Max. Crime Rate / Labor Force (in %)' />
+            <format attr='subtitle' class='0' field='[textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[textscan.43658.494296967590].[min:Annual Home Price:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[textscan.43658.494296967590].[min:Annual Home Price:qk]' scope='rows' value='Min. Annual Home Price (in $)' />
+            <format attr='subtitle' class='0' field='[textscan.43658.494296967590].[min:Annual Home Price:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.43658.494296967590].[min:Annual Home Price:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[textscan.43658.494296967590].[min:Annual Wages per Employee:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[textscan.43658.494296967590].[min:Annual Wages per Employee:qk]' scope='rows' value='Min. Annual Wages per Employee (in $)' />
+            <format attr='subtitle' class='0' field='[textscan.43658.494296967590].[min:Annual Wages per Employee:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.43658.494296967590].[min:Annual Wages per Employee:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[textscan.43658.494296967590].[max:Total State Tax:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[textscan.43658.494296967590].[max:Total State Tax:qk]' scope='rows' value='Max. Total State Tax (in $)' />
+            <format attr='subtitle' class='0' field='[textscan.43658.494296967590].[max:Total State Tax:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.43658.494296967590].[max:Total State Tax:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' scope='rows' value='Max. Unemployed / Labor Force (in %)' />
+            <format attr='subtitle' class='0' field='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[textscan.43658.494296967590].[min:Labor Force:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='subtitle' class='0' field='[textscan.43658.494296967590].[min:Labor Force:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[textscan.43658.494296967590].[min:Labor Force:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[textscan.43658.494296967590].[none:Total WSA:ok]' value='80' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[textscan.43658.494296967590].[none:Total WSA:ok]' value='-90' />
+            <format attr='text-format' field='[textscan.43658.494296967590].[none:Total WSA:ok]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[textscan.43658.494296967590].[none:Total State Tax:qk]' num-steps='50' palette='tableau-map-temperatur' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-pattern' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#b40f1e' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-pattern' id='refline1' value='dashed' />
+            <format attr='stroke-color' id='refline1' value='#b40f1e' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <reference-line axis-column='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='3.7999999999999998' value-column='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]' z-order='1' />
+          </pane>
+          <pane id='5' y-axis-name='[textscan.43658.494296967590].[min:Annual Home Price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' y-axis-name='[textscan.43658.494296967590].[min:Annual Wages per Employee:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' y-axis-name='[textscan.43658.494296967590].[max:Unemployed / Labor Force:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' y-axis-name='[textscan.43658.494296967590].[max:Total State Tax:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' y-axis-name='[textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' y-axis-name='[textscan.43658.494296967590].[min:Labor Force:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[textscan.43658.494296967590].[none:Total State Tax:qk]' />
+              <lod column='[textscan.43658.494296967590].[Latitude (generated)]' />
+              <lod column='[textscan.43658.494296967590].[Longitude (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.44977900385856628' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([textscan.43658.494296967590].[min:Annual Home Price:qk] + ([textscan.43658.494296967590].[min:Annual Wages per Employee:qk] + ([textscan.43658.494296967590].[max:Total State Tax:qk] + ([textscan.43658.494296967590].[min:Labor Force:qk] + ([textscan.43658.494296967590].[max:Crime Rate / Labor Force:qk] + [textscan.43658.494296967590].[max:Unemployed / Labor Force:qk])))))</rows>
+        <cols>([textscan.43658.494296967590].[none:Total WSA:ok] / [textscan.43658.494296967590].[none:State:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='5' param='[textscan.43658.494296967590].[none:Total State Tax:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.43658.494296967590].[none:State:nk]</field>
+          <field>[textscan.43658.494296967590].[none:Total State Tax:qk]</field>
+          <field>[textscan.43658.494296967590].[none:Total WSA:ok]</field>
+          <field>[textscan.43658.494296967590].[none:Unemployed / Labor Force:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
